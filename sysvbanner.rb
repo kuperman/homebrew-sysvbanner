@@ -7,14 +7,14 @@ class Sysvbanner < Formula
 
   def install
     system 'make'
-    bin.install  'banner'
-    man1.install 'banner.1'
+    #bin.install  'banner'
+    #man1.install 'banner.1'
     # These really should be renamed, and changed in the manpage
-    #bin.install  'banner' => 'sysvbanner'
-    #man1.install 'banner.1' => 'sysvbanner.1'
+    bin.install  'banner' => 'sysvbanner'
+    man1.install 'banner.1' => 'sysvbanner.1'
   end
 
   test do
-    system "#{bin}/banner", "testing", "banner"
+    system "#{bin}/sysvbanner", "testing", "banner"
   end
 end
