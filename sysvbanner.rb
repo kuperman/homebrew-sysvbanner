@@ -3,7 +3,7 @@ require 'formula'
 class Sysvbanner < Formula
   homepage 'http://packages.debian.org/source/stable/sysvbanner'
   url 'http://ftp.debian.org/debian/pool/main/s/sysvbanner/sysvbanner_1.0.15.tar.gz'
-  sha1 '310960c38ff9778bc1597322f45f8b052b7c5ede'
+  sha256 'f30ddfaeebb635c088c861a6f009bcf2ee2ffb1cf56fb9c0e0ff84dba7d84a94'
 
   def install
     system 'make'
